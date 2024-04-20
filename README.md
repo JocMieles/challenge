@@ -26,9 +26,9 @@ Una vez que los servicios estén en ejecución, la API estará disponible en *ht
 **Crear una transacción**
 POST http://localhost:3000/transactions Envía un JSON con la estructura del objeto CreateTransactionInput para crear una nueva transacción.
 **graphql**
-```json
-mutation {
-  createTransaction(
+````json
+   mutation {
+     createTransaction(
     createTransaction: {
       accountExternalIdDebit: "G",
       accountExternalIdCredit: "G",
