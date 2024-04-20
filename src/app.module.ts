@@ -11,7 +11,7 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env',
+      envFilePath: '.env.example',
     }),
     TransactionModule, AntiFraudModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
